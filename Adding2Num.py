@@ -20,9 +20,10 @@ class Node(object):
 
     def set_next(self, new_next):
         self.next = new_next
+        
     def print_list(self):
         while self.get_next():
-            print self.get_data()
+            print(self.get_data())
             self = self.get_next()
 
 class Solution(object):
