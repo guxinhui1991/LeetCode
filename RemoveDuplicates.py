@@ -12,7 +12,9 @@
 #            if(head.next.val == head.val):
 #                head.next = head.next.next
 #        return head
-    
+
+
+
 class Solution(object):
     def deleteDuplicates(self, head):
         """
