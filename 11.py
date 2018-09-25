@@ -18,3 +18,5 @@ class Solution:
         return max(res_vec)
 
 Solution().maxArea([1, 3, 4, 5, 6, 3])
+
+
