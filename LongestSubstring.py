@@ -47,6 +47,6 @@ class Solution(object):
 
 
 #start = time.time()
-print Solution().lengthOfLongestSubstring('dvdfsdfadfgergrtgascasdfdgearferasdc')
+print(Solution().lengthOfLongestSubstring('dvdfsdfadfgergrtgascasdfdgearferasdc'))
 #end = time.time()
 #print end - start

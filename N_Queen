@@ -9,7 +9,18 @@ Created on Wed Aug 29 17:08:17 2018
 import pandas as pd
 import numpy as np
 
-n = 4
-table = np.zeros((n, n))
 
-for i in range(n):    
+n = 4
+def solution(n):
+    table = np.zeros((n, n))
+    placed_queens = 0
+    for i in range(n):
+
+        if placed_queens == n: return True
+
+        for j in range(n):
+            if table[j, i]<0: continue
+            else:
+                table[j, i] = 1
+
+        print(table[:, i])
