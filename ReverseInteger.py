@@ -7,13 +7,15 @@ Created on Thu May 11 17:29:45 2017
 """
 import math
 class Solution(object):
-    
+    def cmp(self, a, b):
+        return (a > b) - (a < b)
+
     def reverse(self, x):
 #        s = cmp(x, 0)
 #        r = int(`s*x`[::-1])
 #        return s*r * (r < 2**31)
 
-        flag = cmp(x, 0)
+        flag = self.cmp(x, 0)
         s = str(flag*x)[::-1]
         return flag*int(s)*(x<pow(2, 32))
 #    def reverse(self, x):
