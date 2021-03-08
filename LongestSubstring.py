@@ -3,6 +3,14 @@
 """
 Created on Thu May 11 07:57:02 2017
 
+Problem:
+Length of the longest substring without repeating characters
+Given a string str, find the length of the longest substring without repeating characters.
+
+For “ABDEFGABEF”, the longest substring are “BDEFGA” and “DEFGAB”, with length 6.
+For “BBBB” the longest substring is “B”, with length 1.
+For “GEEKSFORGEEKS”, there are two longest substrings shown in the below diagrams, with length 7
+
 @author: Xinhui
 """
 import time
@@ -26,7 +34,7 @@ class Solution(object):
             start=i
             end = i
             substr.append(curr)
-        return len(max(substr, key=len))
+        return len(max(substr, key=len)), max(substr, key=len)
 
 #class Solution:
 #    # @return an integer
@@ -48,5 +56,7 @@ class Solution(object):
 
 #start = time.time()
 print(Solution().lengthOfLongestSubstring('dvdfsdfadfgergrtgascasdfdgearferasdc'))
+print(Solution().lengthOfLongestSubstring('ABDEFGABEF'))
+print(Solution().lengthOfLongestSubstring('AAAAAA'))
 #end = time.time()
 #print end - start
