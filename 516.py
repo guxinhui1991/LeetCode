@@ -11,7 +11,7 @@ class Solution(object):
         dp = [[0] * len(s) for _ in range(len(s))]
         dp[0][0] = 1
 
-        for i in reversed(range(len(s) - 1)):
+        for i in reversed(range(len(s))):
             dp[i][i] = 1
             for j in range(i + 1, len(s)):
                 if s[i] == s[j]:
@@ -22,6 +22,19 @@ class Solution(object):
 
         return dp[0][-1]
 
+def longestPalindromeSubseq2022(self, s):
+    """
+    :type s: str
+    :rtype: int
+
+    dp[i][j]: the longest palindromic subsequence's length of substring(i, j)
+    here i, j represent left, right indexes in the string
+    """
+
+    dp = [[0] * len(s) for _ in range(len(s))]
+    dp[0][0] = 1
+
+    return dp[0][-1]
 
 print(Solution().longestPalindromeSubseq("bbbab"))
 # print(Solution().longestPalindromeSubseq("cbbd"))
