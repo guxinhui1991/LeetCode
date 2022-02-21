@@ -8,9 +8,48 @@ import math
 
 
 def findMinArray(arr, k):
+    # Write your code here
+    sortIdx = []
+    for i in range(len(arr) - 1):
+        if arr[i + 1] < arr[i]:
+            sortIdx.append(i+1)
 
+    while k > 0 and len(sortIdx) > 0:
+        idxToSwap = findMinIndx([x for x in sortIdx if x <= k], arr)
+        sortIdx.remove(idxToSwap)
 
-# Write your code here
+        if idxToSwap > 0:
+            arr[idxToSwap]
+        arr = [arr[idxToSwap]] + arr[:idxToSwap] + arr[idxToSwap+1:]
+        k = k - idxToSwap
+        continue
+
+        '''
+        idxToSwap = sortIdx.pop(0)
+        arr = swapByIndex(arr, idxToSwap, idxToSwap+1)
+        k = k - 1
+        if idxToSwap + 1 < len(arr)  and arr[idxToSwap] > arr[idxToSwap + 1]:
+            sortIdx.insert(0, idxToSwap)
+        '''
+
+    return arr
+
+def findMinIndx(idxList, arr):
+    if not arr: return None
+    res = idxList[0]
+    for i in idxList:
+        if arr[i] < arr[res]:
+            res = i
+
+    return res
+
+def swapByIndex(arr, i, j):
+    temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+
+    return arr
+
 
 
 # These are the tests we use to determine if the solution is correct.
@@ -71,3 +110,9 @@ if __name__ == "__main__":
     check(expected_2, output_2)
 
     # Add your own test cases here
+    n_3 = 8
+    arr_3 = [5,4,4,6,1,7,9,3]
+    k_3 = 3
+    expected_3 =  [4,4,5,1,6,7,9,3]
+    output_3 = findMinArray(arr_3, k_3)
+    check(expected_3, output_3)

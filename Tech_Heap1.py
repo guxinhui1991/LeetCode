@@ -1,5 +1,5 @@
 import math
-
+import heapq
 
 # Add any extra import statements you may need here
 
@@ -10,7 +10,25 @@ import math
 def findMaxProduct(arr):
     # Write your code here
 
+    if len(arr) < 3: return [-1] * len(arr)
+    h = []
+    heapq.heappush(h, arr[0])
+    heapq.heappush(h, arr[1])
+    heapq.heappush(h, arr[2])
 
+    resProd = 1
+    for i in h:
+        resProd = resProd * i
+
+    res = [-1, -1, resProd]
+    for i in range(3, len(arr)):
+        if arr[i] > h[0]:
+            popVal = heapq.heappop(h)
+            heapq.heappush(h, arr[i])
+            resProd = resProd // popVal * arr[i]
+        res.append(resProd)
+
+    return res
 
 
 # These are the tests we use to determine if the solution is correct.
