@@ -1,0 +1,799 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fmodern\fcharset0 Courier;\f4\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red29\green38\blue42;\red245\green247\blue249;\red255\green255\blue255;
+\red67\green91\blue103;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c14902\c19608\c21961;\cssrgb\c96863\c97647\c98039;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c32941\c43137\c47843;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww23820\viewh18580\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2183\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+175.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Input: \
+Person table:\
++----------+----------+-----------+\
+| personId | lastName | firstName |\
++----------+----------+-----------+\
+| 1        | Wang     | Allen     |\
+| 2        | Alice    | Bob       |\
++----------+----------+-----------+\
+Address table:\
++-----------+----------+---------------+------------+\
+| addressId | personId | city          | state      |\
++-----------+----------+---------------+------------+\
+| 1         | 2        | New York City | New York   |\
+| 2         | 3        | Leetcode      | California |\
++-----------+----------+---------------+------------+\
+Output: \
++-----------+----------+---------------+----------+\
+| firstName | lastName | city          | state    |\
++-----------+----------+---------------+----------+\
+| Allen     | Wang     | Null          | Null     |\
+| Bob       | Alice    | New York City | New York |\
++-----------+----------+---------------+----------+\
+Explanation: \
+There is no address in the address table for the personId = 1 so we return null in their city and state.\
+addressId = 1 contains information about the address of personId = 2.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT Person.firstName, Person.lastName, Address.city, Address.state\
+FROM Person LEFT JOIN Address\
+ON Person.personId = Address.personId;\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+\
+176.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Input:
+\f0\b0  \
+Employee table:\
++----+--------+\
+| id | salary |\
++----+--------+\
+| 1  | 100    |\
+| 2  | 200    |\
+| 3  | 300    |\
++----+--------+\
+
+\f1\b Output:
+\f0\b0  \
++---------------------+\
+| SecondHighestSalary |\
++---------------------+\
+| 200                 |\
++---------------------+\
+\
++-------------+------+\
+| Column Name | Type |\
++-------------+------+\
+| id          | int  |\
+| salary      | int  |\
++-------------+------+\
+id is the primary key column for this table.\
+Each row of this table contains information about the salary of an employee.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT MAX(salary) AS SecondHighestSalary\
+FROM (SELECT * FROM Employee WHERE salary < (SELECT MAX(salary) from Employee))\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+177.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf2 +-------------+------+\
+| Column Name | Type |\
++-------------+------+\
+| id          | int  |\
+| salary      | int  |\
++-------------+------+\
+id is the primary key column for this table.\
+Each row of this table contains information about the salary of an employee.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+\
+Input:
+\f0\b0  \
+Employee table:\
++----+--------+\
+| id | salary |\
++----+--------+\
+| 1  | 100    |\
+| 2  | 200    |\
+| 3  | 300    |\
++----+--------+\
+n = 2\
+
+\f1\b Output:
+\f0\b0  \
++------------------------+\
+| getNthHighestSalary(2) |\
++------------------------+\
+| 200                    |\
++------------------------+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+CREATE FUNCTION getNthHighestSalary(N IN NUMBER) RETURN NUMBER IS\
+result NUMBER;\
+BEGIN\
+    /* Write your PL/SQL query statement below */\
+    SELECT SALARY\
+    INTO result\
+    FROM (\
+        SELECT Employee.*, dense_rank() OVER (ORDER BY SALARY DESC) AS SALARY_ORDER\
+        FROM Employee    \
+    )\
+    WHERE SALARY_ORDER = N And ROWNUM = 1;\
+    RETURN result;\
+END;\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+178.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf2 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| score       | decimal |\
++-------------+---------+\
+id is the primary key for this table.\
+Each row of this table contains the score of a game. Score is a floating point value with two decimal places.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+Input:
+\f0\b0  \
+Scores table:\
++----+-------+\
+| id | score |\
++----+-------+\
+| 1  | 3.50  |\
+| 2  | 3.65  |\
+| 3  | 4.00  |\
+| 4  | 3.85  |\
+| 5  | 4.00  |\
+| 6  | 3.65  |\
++----+-------+\
+
+\f1\b Output:
+\f0\b0  \
++-------+------+\
+| score | rank |\
++-------+------+\
+| 4.00  | 1    |\
+| 4.00  | 1    |\
+| 3.85  | 2    |\
+| 3.65  | 3    |\
+| 3.65  | 3    |\
+| 3.50  | 4    |\
++-------+------+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT SCORE AS "score", dense_rank() over(order by score desc)  AS "rank"\
+FROM Scores\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+180.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf2 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| num         | varchar |\
++-------------+---------+\
+id is the primary key for this table.\
+id is an autoincrement column.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+Input:
+\f0\b0  \
+Logs table:\
++----+-----+\
+| id | num |\
++----+-----+\
+| 1  | 1   |\
+| 2  | 1   |\
+| 3  | 1   |\
+| 4  | 2   |\
+| 5  | 1   |\
+| 6  | 2   |\
+| 7  | 2   |\
++----+-----+\
+
+\f1\b Output:
+\f0\b0  \
++-----------------+\
+| ConsecutiveNums |\
++-----------------+\
+| 1               |\
++-----------------+\
+
+\f1\b Explanation:
+\f0\b0  1 is the only number that appears consecutively for at least three times.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT NUM ConsecutiveNums\
+FROM\
+(\
+    SELECT LOGS.*, \
+    lag(NUM) OVER(ORDER BY id)  LAG_NUM, \
+    lead(NUM) OVER(ORDER BY id)  LEAD_NUM\
+    FROM LOGS\
+) s\
+WHERE s.NUM = s.LAG_NUM AND s.NUM=s.LEAD_NUM\
+GROUP BY NUM\
+\
+\
+SELECT DISTINCT NUM ConsecutiveNums\
+FROM\
+(\
+    SELECT LOGS.*, \
+    lag(NUM) OVER(ORDER BY id)  LAG_NUM, \
+    lead(NUM) OVER(ORDER BY id)  LEAD_NUM\
+    FROM LOGS\
+) s\
+WHERE s.NUM = s.LAG_NUM AND s.NUM=s.LEAD_NUM\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+181.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf2 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| name        | varchar |\
+| salary      | int     |\
+| managerId   | int     |\
++-------------+---------+\
+id is the primary key column for this table.\
+Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+Input:
+\f0\b0  \
+Employee table:\
++----+-------+--------+-----------+\
+| id | name  | salary | managerId |\
++----+-------+--------+-----------+\
+| 1  | Joe   | 70000  | 3         |\
+| 2  | Henry | 80000  | 4         |\
+| 3  | Sam   | 60000  | Null      |\
+| 4  | Max   | 90000  | Null      |\
++----+-------+--------+-----------+\
+
+\f1\b Output:
+\f0\b0  \
++----------+\
+| Employee |\
++----------+\
+| Joe      |\
++----------+\
+
+\f1\b Explanation:
+\f0\b0  Joe is the only employee who earns more than his manager.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\
+SELECT name AS "Employee" from\
+(\
+    SElECT e1.*, e2.salary Mgr_Sal\
+    FROM Employee e1 LEFT JOIN Employee e2\
+    ON e1.managerId = e2.id\
+) s\
+where s.salary > s.Mgr_Sal\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+182.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf2 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| email       | varchar |\
++-------------+---------+\
+id is the primary key column for this table.\
+Each row of this table contains an email. The emails will not contain uppercase letters.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+Input:
+\f0\b0  \
+Person table:\
++----+---------+\
+| id | email   |\
++----+---------+\
+| 1  | a@b.com |\
+| 2  | c@d.com |\
+| 3  | a@b.com |\
++----+---------+\
+
+\f1\b Output:
+\f0\b0  \
++---------+\
+| Email   |\
++---------+\
+| a@b.com |\
++---------+\
+
+\f1\b Explanation:
+\f0\b0  a@b.com is repeated two times.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+SELECT email FROM\
+(\
+    SELECT Person.*,count(*) OVER(partition by email) AS "email_count"\
+    FROM Person\
+) s\
+WHERE s."email_count">1\
+GROUP BY email\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+183.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\b0\fs28 \cf2 \cb4 Table:\'a0
+\f3\fs26 \cf5 \cb3 Customers
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| name        | varchar |\
++-------------+---------+\
+id is the primary key column for this table.\
+Each row of this table indicates the ID and name of a customer.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \'a0\
+Table:\'a0
+\f3\fs26 \cf5 \cb3 Orders
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +-------------+------+\
+| Column Name | Type |\
++-------------+------+\
+| id          | int  |\
+| customerId  | int  |\
++-------------+------+\
+id is the primary key column for this table.\
+customerId is a foreign key of the ID from the Customers table.\
+Each row of this table indicates the ID of an order and the ID of the customer who ordered it.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+Input:
+\f0\b0  \
+Customers table:\
++----+-------+\
+| id | name  |\
++----+-------+\
+| 1  | Joe   |\
+| 2  | Henry |\
+| 3  | Sam   |\
+| 4  | Max   |\
++----+-------+\
+Orders table:\
++----+------------+\
+| id | customerId |\
++----+------------+\
+| 1  | 3          |\
+| 2  | 1          |\
++----+------------+\
+
+\f1\b Output:
+\f0\b0  \
++-----------+\
+| Customers |\
++-----------+\
+| Henry     |\
+| Max       |\
++-----------+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+SELECT NAME Customers FROM\
+(\
+    SELECT c.*, o.id AS "ORDER_ID" \
+    FROM Customers c LEFT JOIN Orders o\
+    ON c.id = o.customerId\
+) f\
+WHERE f.ORDER_ID is null\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+\
+\
+184.\
+\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \expnd0\expndtw0\kerning0
+Table:\'a0
+\f3\fs26 \cf5 \cb3 Employee
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +--------------+---------+\
+| Column Name  | Type    |\
++--------------+---------+\
+| id           | int     |\
+| name         | varchar |\
+| salary       | int     |\
+| departmentId | int     |\
++--------------+---------+\
+id is the primary key column for this table.\
+departmentId is a foreign key of the ID from the Department table.\
+Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \'a0\
+Table:\'a0
+\f3\fs26 \cf5 \cb3 Department
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| name        | varchar |\
++-------------+---------+\
+id is the primary key column for this table.\
+Each row of this table indicates the ID of a department and its name.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \'a0\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Input:
+\f0\b0  \
+Employee table:\
++----+-------+--------+--------------+\
+| id | name  | salary | departmentId |\
++----+-------+--------+--------------+\
+| 1  | Joe   | 70000  | 1            |\
+| 2  | Jim   | 90000  | 1            |\
+| 3  | Henry | 80000  | 2            |\
+| 4  | Sam   | 60000  | 2            |\
+| 5  | Max   | 90000  | 1            |\
++----+-------+--------+--------------+\
+Department table:\
++----+-------+\
+| id | name  |\
++----+-------+\
+| 1  | IT    |\
+| 2  | Sales |\
++----+-------+\
+
+\f1\b Output:
+\f0\b0  \
++------------+----------+--------+\
+| Department | Employee | Salary |\
++------------+----------+--------+\
+| IT         | Jim      | 90000  |\
+| Sales      | Henry    | 80000  |\
+| IT         | Max      | 90000  |\
++------------+----------+--------+\
+
+\f1\b Explanation:
+\f0\b0  Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT temp."Department", temp."employee", temp.Salary FROM\
+(\
+    SELECT e.id, e.name AS "employee", salary, departmentId, d.name AS "Department", MAX(SALARY) OVER(PARTITION BY DEPARTMENTID) MAX_DEPT\
+    FROM employee e left join department d\
+    on e.departmentId = d.id\
+)temp\
+WHERE (salary = MAX_DEPT)\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\
+\
+185.\
+\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \expnd0\expndtw0\kerning0
+Table:\'a0
+\f3\fs26 \cf5 \cb3 Employee
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +--------------+---------+\
+| Column Name  | Type    |\
++--------------+---------+\
+| id           | int     |\
+| name         | varchar |\
+| salary       | int     |\
+| departmentId | int     |\
++--------------+---------+\
+id is the primary key column for this table.\
+departmentId is a foreign key of the ID from the Department table.\
+Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \'a0\
+Table:\'a0
+\f3\fs26 \cf5 \cb3 Department
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 +-------------+---------+\
+| Column Name | Type    |\
++-------------+---------+\
+| id          | int     |\
+| name        | varchar |\
++-------------+---------+\
+id is the primary key column for this table.\
+Each row of this table indicates the ID of a department and its name.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f1\b\fs26 \cf2 \cb3 Input:
+\f0\b0  \
+\pard\pardeftab720\partightenfactor0
+\cf2 Employee table:\
++----+-------+--------+--------------+\
+| id | name  | salary | departmentId |\
++----+-------+--------+--------------+\
+| 1  | Joe   | 85000  | 1            |\
+| 2  | Henry | 80000  | 2            |\
+| 3  | Sam   | 60000  | 2            |\
+| 4  | Max   | 90000  | 1            |\
+| 5  | Janet | 69000  | 1            |\
+| 6  | Randy | 85000  | 1            |\
+| 7  | Will  | 70000  | 1            |\
++----+-------+--------+--------------+\
+Department table:\
++----+-------+\
+| id | name  |\
++----+-------+\
+| 1  | IT    |\
+| 2  | Sales |\
++----+-------+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 Output:
+\f0\b0  \
++------------+----------+--------+\
+| Department | Employee | Salary |\
++------------+----------+--------+\
+| IT         | Max      | 90000  |\
+| IT         | Joe      | 85000  |\
+| IT         | Randy    | 85000  |\
+| IT         | Will     | 70000  |\
+| Sales      | Henry    | 80000  |\
+| Sales      | Sam      | 60000  |\
++------------+----------+--------+\
+
+\f1\b Explanation:
+\f0\b0  \
+In the IT department:\
+- Max earns the highest unique salary\
+- Both Randy and Joe earn the second-highest unique salary\
+- Will earns the third-highest unique salary\
+\
+In the Sales department:\
+- Henry earns the highest salary\
+- Sam earns the second-highest salary\
+- There is no third-highest salary as there are only two employees\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f2\fs28 \cf2 \cb4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+SELECT Dept AS "Department",  Name AS "Employee", SALARY FROM\
+(\
+    SELECT s.*,\
+    dense_rank() OVER(PARTITION BY DEPT ORDER BY SALARY DESC) Dept_rank\
+    FROM\
+    (\
+        SELECT e.*, d.NAME Dept\
+        FROM employee e left join Department d\
+        on e.departmentId = d.id\
+    )s\
+)\
+WHERE DEPT_RANK <=3\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+262.\
+\
+SELECT t.REQUEST_AT DAY, ROUND(COUNT_CANCEL/COUNT_TOTAL, 2) AS "Cancellation Rate"  FROM\
+(\
+    SELECT s.REQUEST_AT, count(status) count_total, count(CASE WHEN STATUS in ('cancelled_by_driver', 'cancelled_by_client') THEN 1 END) count_cancel FROM(\
+        select * FROM TRIPS\
+        WHERE driver_id in (SELECT users_id FROM USERS WHERE BANNED = 'No') AND  CLIENT_ID in (SELECT users_id FROM USERS WHERE BANNED = 'No') AND (request_at between '2013-10-01' and '2013-10-03')\
+    )s\
+    GROUP BY s.REQUEST_AT\
+)t\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+534.\
+select player_id, event_date, SUM(games_played) OVER(\
+partition by player_id\
+order by event_date) games_played_so_far\
+from activity\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+608.\
+\
+\
+SELECT DISTINCT ID, type FROM\
+(\
+    SELECT s.ID, (\
+     CASE \
+     WHEN P_ID is null THEN 'Root'\
+     WHEN c_ID is null THEN 'Leaf'\
+     ELSE 'Inner'\
+     END\
+    ) type\
+    FROM \
+    (\
+        SELECT t1.*, t2.ID C_ID\
+        FROM tree t1 left join tree t2\
+        ON t1.ID = t2.P_ID\
+    )s\
+)\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+1174.\
+\
+SELECT TO_CHAR(SUM(isImmediateFirstOrder)/COUNT(*), '0.00') immediate_percentage FROM\
+(\
+    SELECT DISTINCT CUSTOMER_ID, first_value(isImmediate) OVER(PARTITION BY CUSTOMER_ID) isImmediateFirstOrder\
+    FROM(\
+        select d.*, (CASE \
+        WHEN order_date=CUSTOMER_PREF_DELIVERY_DATE THEN 1\
+        ELSE 0\
+        END\
+        ) isImmediate\
+        from delivery d\
+        order by ORDER_DATE\
+    )\
+)\
+\
+\
+\
+WITH first_order_table AS (\
+    SELECT DISTINCT CUSTOMER_ID, first_value(isImmediate) OVER(PARTITION BY CUSTOMER_ID) isImmediateFirstOrder\
+    FROM(\
+        select d.*, (CASE \
+        WHEN order_date=CUSTOMER_PREF_DELIVERY_DATE THEN 1\
+        ELSE 0\
+        END\
+        ) isImmediate\
+        from delivery d\
+        order by ORDER_DATE\
+    )\
+)\
+\
+SELECT TO_CHAR(SUM(isImmediateFirstOrder)/COUNT(*), '0.00') immediate_percentage FROM\
+first_order_table\
+\
+\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+1174.\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs39 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 Find the percentage of rides for each weather and the hour\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \strokec6 Find the percentage of total rides each weather-hour combination constitutes Output the weather, hour along with the corresponding percentage. Sort records by the weather and the hour in ascending order.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+select distinct weather, hour, round(count_w_h/total_count, 2) Percentage from\
+(\
+    select t.*, count(id) over(partition by hour, weather) as count_w_h, count(*) over() as total_count\
+    from mytable t\
+)\
+order by weather, hour}

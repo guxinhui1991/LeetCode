@@ -1,0 +1,254 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19420\viewh11080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \CocoaLigature0 \
+ALTER SESSION SET NLS_DATE_FORMAT='YYYY-MM-DD'\
+\
+-- create a table\
+CREATE TABLE EMP (\
+  \
+EMPNO INTEGER PRIMARY KEY,\
+ENAME VARCHAR(250), \
+JOB VARCHAR(250),\
+MGR VARCHAR(250),\
+HIREDATE VARCHAR(250),\
+SAL INTEGER,\
+COMM INTEGER,\
+DEPTNO INTEGER\
+);\
+\
+\
+-- insert some values\
+INSERT INTO EMP VALUES (7839, 'KING', 'PRESIDENT', NULL, '11/17/1981', 5000, NULL, 10);\
+INSERT INTO EMP VALUES (7698, 'BLAKE', 'MANAGER', 7839, '05/01/1981', 2850, NULL, 30);\
+INSERT INTO EMP VALUES (7782, 'CLARK', 'MANAGER', 7839, '06/09/1981', 2450, NULL, 10);\
+INSERT INTO EMP VALUES (7566, 'JONES', 'MANAGER', 7839, '04/02/1981', 2975, NULL, 20);\
+INSERT INTO EMP VALUES (7788, 'SCOTT', 'ANALYST', 7566, '12/09/1982', 3000, NULL, 20);\
+INSERT INTO EMP VALUES (7902, 'FORD', 'ANALYST', 7566, '12/03/1982', 3000, NULL, 20);\
+INSERT INTO EMP VALUES (7369, 'SMITH', 'CLERK', 7902, '12/17/1980', 800, NULL, 20);\
+INSERT INTO EMP VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '02/20/1981', 1600, 300, 30);\
+INSERT INTO EMP VALUES (7521, 'WARD', 'SALESMAN', 7698, '02/22/1981', 1250, 500, 30);\
+INSERT INTO EMP VALUES (7654, 'MARTIN', 'SALESMAN', 7698, '09/28/1981', 1250, 1400, 30);\
+INSERT INTO EMP VALUES (7844, 'TURNER', 'SALESMAN', 7698, '09/08/1981', 1500, NULL, 30);\
+INSERT INTO EMP VALUES (7876, 'ADAMS', 'CLERK', 7788, '01/12/1983', 1100, NULL, 20);\
+INSERT INTO EMP VALUES (7900, 'JAMES', 'CLERK', 7698, '12/03/1983', 950, NULL, 30);\
+INSERT INTO EMP VALUES (7934, 'MILLER', 'CLERK', 7782, '01/23/1983', 1300, NULL, 10);\
+\
+\
+\
+-- create a table\
+CREATE TABLE DEPT (\
+  \
+DEPTNO INTEGER PRIMARY KEY,\
+DNAME VARCHAR(250), \
+LOC VARCHAR(250)\
+);\
+\
+\
+-- insert some values\
+INSERT INTO DEPT VALUES (10, 'ACCOUNTING', 'NEW YORK');\
+INSERT INTO DEPT VALUES (20, 'RESEARCH', 'DALLAS');\
+INSERT INTO DEPT VALUES (30, 'SALES', 'CHICAGO');\
+INSERT INTO DEPT VALUES (40, 'OPERATIONS', 'BOSTON');\
+\
+\
+\
+\
+\
+CREATE TABLE job_grade\
+(Grade_level varchar(2) not null,\
+lowest_sal number not null,\
+highest_sal number not null);\
+\
+\
+INSERT ALL\
+INTO job_grade\
+VALUES ('A', 0, 1000)\
+INTO job_grade\
+VALUES ('B', 1001, 2000)\
+INTO job_grade\
+VALUES ('C', 2001, 3000)\
+INTO job_grade\
+VALUES ('D', 3001, 4000)\
+INTO job_grade\
+VALUES ('E', 4001, 5000)\
+SELECT * FROM DUAL;\
+\
+\
+\
+#185\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 \
+Create table Employee (id int, name varchar(255), salary int, departmentId int);\
+Create table Department (id int, name varchar(255));\
+\
+insert into Employee values ('1', 'Joe', '85000', '1');\
+insert into Employee values ('2', 'Henry', '80000', '2');\
+insert into Employee values ('3', 'Sam', '60000', '2');\
+insert into Employee values ('4', 'Max', '90000', '1');\
+insert into Employee values ('5', 'Janet', '69000', '1');\
+insert into Employee values ('6', 'Randy', '85000', '1');\
+insert into Employee values ('7', 'Will', '70000', '1');\
+\
+insert into Department values ('1', 'IT');\
+insert into Department values ('2', 'Sales');\
+\
+\
+#262\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 Create table Trips (\
+id int, \
+client_id int, \
+driver_id int, \
+city_id int, \
+status VARCHAR2(10) CHECK(status IN ('completed', 'cancelled_by_driver', 'cancelled_by_client')),\
+request_at varchar(50)\
+);\
+\
+Create table Users (\
+users_id int, \
+banned varchar(50), \
+role VARCHAR2(10) CHECK(role IN ('client', 'driver', 'partner'))\
+)\
+\
+\
+#534\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\CocoaLigature0 \
+Create table Activity (player_id int, device_id int, event_date date, games_played int)  \
+insert into Activity values ('1', '2', Date '2016-03-01', '5');\
+insert into Activity values ('1', '2', Date '2016-05-02', '6');\
+insert into Activity values ('1', '3', Date '2017-06-25', '1');\
+insert into Activity values ('3', '1', Date '2016-03-02', '0');\
+insert into Activity values ('3', '4', Date '2017-07-03', '5');\
+\
+\
+#626\
+\CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\CocoaLigature0 \
+Create table Seat (id int, student varchar(255))  \
+insert into Seat values ('1', 'Abbot');\
+insert into Seat values ('2', 'Doris');\
+insert into Seat values ('3', 'Emerson');\
+insert into Seat values ('4', 'Green');\
+insert into Seat values ('5', 'Jeames');\
+\
+#1084\
+\CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 \
+Create table Product (product_id int, product_name varchar(10), unit_price int);\
+Create table Sales (seller_id int, product_id int, buyer_id int, sale_date date, quantity int, price int);\
+\
+insert into Product values ('1', 'S8', '1000');\
+insert into Product values ('2', 'G4', '800');\
+insert into Product values ('3', 'iPhone', '1400');\
+\
+insert into Sales values ('1', '1', '1', date '2019-01-21', '2', '2000');\
+insert into Sales values ('1', '2', '2', date '2019-02-17', '1', '800');\
+insert into Sales values ('2', '2', '3', date '2019-06-02', '1', '800');\
+insert into Sales values ('3', '3', '4', date '2019-05-13', '2', '2800');\
+\
+\
+#1127\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 \
+Create Table Spending (\
+id int,\
+spend_date date, \
+platform VARCHAR2(10) CHECK(platform IN ('mobile', 'desktop')),\
+amount int);\
+\
+\
+insert into Spending values ('1', Date '2019-07-01', 'mobile', '100');\
+insert into Spending values ('1', Date '2019-07-01', 'desktop', '100');\
+insert into Spending values ('2', Date '2019-07-01', 'mobile', '100');\
+insert into Spending values ('2', Date '2019-07-02', 'mobile', '100');\
+insert into Spending values ('3', Date '2019-07-01', 'desktop', '100');\
+insert into Spending values ('3', Date '2019-07-02', 'desktop', '100');\
+\
+\
+#1158\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 Create table Users (user_id int, join_date date, favorite_brand varchar(10))\
+insert into Users values ('1', Date '2018-01-01', 'Lenovo');\
+insert into Users values ('2', Date '2018-02-09', 'Samsung');\
+insert into Users values ('3', Date '2018-01-19', 'LG');\
+insert into Users values ('4', Date '2018-05-21', 'HP');\
+\
+Create table Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)\
+insert into Orders values ('1', Date '2019-08-01', '4', '1', '2');\
+insert into Orders values ('2', Date '2018-08-02', '2', '1', '3');\
+insert into Orders values ('3', Date '2019-08-03', '3', '2', '3');\
+insert into Orders values ('4', Date '2018-08-04', '1', '4', '2');\
+insert into Orders values ('5', Date '2018-08-04', '1', '3', '4');\
+insert into Orders values ('6', Date '2019-08-05', '2', '2', '4');\
+\
+insert into Items values ('1', 'Samsung');\
+insert into Items values ('2', 'Lenovo');\
+insert into Items values ('3', 'LG');\
+insert into Items values ('4', 'HP');\
+\
+\
+#1174\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 Create table Delivery (delivery_id int, customer_id int, order_date date, customer_pref_delivery_date date)\
+\
+\
+insert into Delivery values ('1', '1', Date '2019-08-01', Date '2019-08-02');\
+insert into Delivery values ('2', '2', Date '2019-08-02', Date '2019-08-02');\
+insert into Delivery values ('3', '1', Date '2019-08-11', Date '2019-08-12');\
+insert into Delivery values ('4', '3', Date '2019-08-24', Date '2019-08-24');\
+insert into Delivery values ('5', '3', Date '2019-08-21', Date '2019-08-22');\
+insert into Delivery values ('6', '2', Date '2019-08-11', Date '2019-08-13');\
+insert into Delivery values ('7', '4', Date '2019-08-09', Date '2019-08-09');\
+\
+\
+#1393\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 \
+Create Table Stocks (stock_name varchar(15), \
+operation VARCHAR2(10) CHECK(operation IN ('Sell', 'Buy')),\
+operation_day int, price int);\
+\
+\
+insert into Stocks values ('Leetcode', 'Buy', '1', '1000');\
+insert into Stocks values ('Corona Masks', 'Buy', '2', '10');\
+insert into Stocks values ('Leetcode', 'Sell', '5', '9000');\
+insert into Stocks values ('Handbags', 'Buy', '17', '30000');\
+insert into Stocks values ('Corona Masks', 'Sell', '3', '1010');\
+insert into Stocks values ('Corona Masks', 'Buy', '4', '1000');\
+insert into Stocks values ('Corona Masks', 'Sell', '5', '500');\
+insert into Stocks values ('Corona Masks', 'Buy', '6', '1000');\
+insert into Stocks values ('Handbags', 'Sell', '29', '7000');\
+insert into Stocks values ('Corona Masks', 'Sell', '10', '10000');\
+\
+\
+\
+\
+#StrataScratch\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97-\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf0 \expnd0\expndtw0\kerning0
+Find the percentage of total rides each weather-hour combination constitutes\
+Output the weather, hour along with the corresponding percentage.\
+Sort records by the weather and the hour in ascending order.
+\f0\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+}
