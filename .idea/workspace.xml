@@ -5,8 +5,207 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdca45b9-bedf-40fb-bfc1-eb143752598e" name="Default Changelist" comment="Update Leetcode 53">
+      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/100-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/100-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/101-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/101-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/11-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/11-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/139-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/139-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/15_3Sum-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/15_3Sum-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/167-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/167-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/168-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/168-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/21-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/21-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/229-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/229-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/3-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/3-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/32-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/32-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/35. Search Insert Position-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/35. Search Insert Position-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/394-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/394-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/4-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/4-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/45-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/45-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/46-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/46-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/47-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/47-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/5-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/5-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/64-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/64-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/6_Zigzag-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/6_Zigzag-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/70-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/70-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/74-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/74-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/7_Reverse_Integer-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/7_Reverse_Integer-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/9_Palindrome Number-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/9_Palindrome Number-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/DP-3-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/DP-3-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/DP-4-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/DP-4-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/DP-7-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/DP-7-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/IterTools-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/IterTools-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/100.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/101.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/101.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/102.py" beforeDir="false" afterPath="$PROJECT_DIR$/102.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1048.py" beforeDir="false" afterPath="$PROJECT_DIR$/1048.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/11.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.py" beforeDir="false" afterPath="$PROJECT_DIR$/11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/112.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/112.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1128.py" beforeDir="false" afterPath="$PROJECT_DIR$/1128.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1143.py" beforeDir="false" afterPath="$PROJECT_DIR$/1143.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/118.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/118.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/11_2019.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Integer to Roman.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/12_Integer to Roman.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/135.py" beforeDir="false" afterPath="$PROJECT_DIR$/135.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/136.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/136.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/136.py" beforeDir="false" afterPath="$PROJECT_DIR$/136.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/139.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/139.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/14.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/144.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/145.py" beforeDir="false" afterPath="$PROJECT_DIR$/145.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_Longest Common Prefix.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/14_Longest Common Prefix.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.py" beforeDir="false" afterPath="$PROJECT_DIR$/15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1525.py" beforeDir="false" afterPath="$PROJECT_DIR$/1525.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1530.py" beforeDir="false" afterPath="$PROJECT_DIR$/1530.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_3Sum.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/15_3Sum.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/167.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/167.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/168.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/168.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_Letter_Combination.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/17_Letter_Combination.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18.py" beforeDir="false" afterPath="$PROJECT_DIR$/18.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/200.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/200.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/208.py" beforeDir="false" afterPath="$PROJECT_DIR$/208.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/21.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/215.py" beforeDir="false" afterPath="$PROJECT_DIR$/215.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/226.py" beforeDir="false" afterPath="$PROJECT_DIR$/226.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/229.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/229.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/24.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27_Remove_Elements.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/27_Remove_Elements.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2Sum.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2Sum.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/300.py" beforeDir="false" afterPath="$PROJECT_DIR$/300.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/31.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/31.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/31_2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/31_2019.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/31_Next Permutation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/31_Next Permutation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/32.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/32.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/322.py" beforeDir="false" afterPath="$PROJECT_DIR$/322.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/34.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/34.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35. Search Insert Position.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/35. Search Insert Position.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/35.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35.py" beforeDir="false" afterPath="$PROJECT_DIR$/35.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/35_Search_Insert.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/35_Search_Insert.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/37.py" beforeDir="false" afterPath="$PROJECT_DIR$/37.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/39.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/39.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/394.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/394.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/394.py" beforeDir="false" afterPath="$PROJECT_DIR$/394.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/39_2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/39_2019.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/40.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/40.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/429.py" beforeDir="false" afterPath="$PROJECT_DIR$/429.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/45.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/455.py" beforeDir="false" afterPath="$PROJECT_DIR$/455.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/45_2019.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/46.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/46.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/46_2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/46_2019.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/47.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/47.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/48.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/48.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4_2019.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/5.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/51.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/51.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/516.py" beforeDir="false" afterPath="$PROJECT_DIR$/516.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/53.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/53.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/57.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/57.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/60.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/60.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/61.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/61.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/62.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/64.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/64.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/678.py" beforeDir="false" afterPath="$PROJECT_DIR$/678.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_Zigzag.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/6_Zigzag.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/7.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/70.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/74.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/74.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/78.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/78.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/790.py" beforeDir="false" afterPath="$PROJECT_DIR$/790.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Reverse_Integer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/7_Reverse_Integer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/90.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/90.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/921.py" beforeDir="false" afterPath="$PROJECT_DIR$/921.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/94.py" beforeDir="false" afterPath="$PROJECT_DIR$/94.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/993.py" beforeDir="false" afterPath="$PROJECT_DIR$/993.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Palindrome Number.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/9_Palindrome Number.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adding2Num.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adding2Num.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DP-14.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DP-14.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DP-3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DP-3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DP-4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DP-4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DP-7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DP-7.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindSumIndex.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FindSumIndex.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindTarget.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindTarget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekTopic1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GeekTopic1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph_BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph_BFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph_DFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph_DFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsertInterval.py" beforeDir="false" afterPath="$PROJECT_DIR$/InsertInterval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntToRoman.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntToRoman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IterTools.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/IterTools.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1Cafeteria.py" beforeDir="false" afterPath="$PROJECT_DIR$/L1Cafeteria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1Kaitenzushi.py" beforeDir="false" afterPath="$PROJECT_DIR$/L1Kaitenzushi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1Photography.py" beforeDir="false" afterPath="$PROJECT_DIR$/L1Photography.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1RotaryLock.py" beforeDir="false" afterPath="$PROJECT_DIR$/L1RotaryLock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1Scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/L1Scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2Photography.py" beforeDir="false" afterPath="$PROJECT_DIR$/L2Photography.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2RotaryLock.py" beforeDir="false" afterPath="$PROJECT_DIR$/L2RotaryLock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2Scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/L2Scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leedcode.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Leedcode.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongestSubstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/LongestSubstring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaximumContiguousSubarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/MaximumContiguousSubarray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MutexLock.py" beforeDir="false" afterPath="$PROJECT_DIR$/MutexLock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Queen" beforeDir="false" afterPath="$PROJECT_DIR$/N_Queen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N_Queen2.py" beforeDir="false" afterPath="$PROJECT_DIR$/N_Queen2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Py1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Py1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R1.R" beforeDir="false" afterPath="$PROJECT_DIR$/R1.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoveDuplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/RemoveDuplicates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseInteger.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseInteger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/Leetcode.rtfd/TXT.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/Leetcode.rtfd/TXT.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 3.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 4.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic 4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/1__#$!@%!#__Pasted Graphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 4.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic 4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/2__#$!@%!#__Pasted Graphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/3__#$!@%!#__Pasted Graphic 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/3__#$!@%!#__Pasted Graphic 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 3.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 4.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 5.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 6.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 7.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 8.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic 8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/Pasted Graphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.rtfd/TXT.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.rtfd/TXT.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL_table_emp.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL_table_emp.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Script.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sun_Trading_test.R" beforeDir="false" afterPath="$PROJECT_DIR$/Sun_Trading_test.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO_1312.py" beforeDir="false" afterPath="$PROJECT_DIR$/TODO_1312.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO_1420.py" beforeDir="false" afterPath="$PROJECT_DIR$/TODO_1420.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO_1671.py" beforeDir="false" afterPath="$PROJECT_DIR$/TODO_1671.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Greedy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Greedy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Greedy2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Greedy2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Heap1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Heap1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Heap2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Heap2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Recursion1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Recursion1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Recursion2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Recursion2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Search1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Search1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Sorting1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Sorting1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Strings1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Strings1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Strings2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tech_Strings2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Trees1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tech_Trees2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/importance_sampling.R" beforeDir="false" afterPath="$PROJECT_DIR$/importance_sampling.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py2.py" beforeDir="false" afterPath="$PROJECT_DIR$/py2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +269,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xinhui/Library/CloudStorage/GoogleDrive-xinhui.gu@gmail.com/My Drive/Python/Leetcode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.394">
-    <configuration name="394" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.SCratch">
+    <configuration name="376" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +295,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/394.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/376.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="921" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="53" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,7 +316,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/921.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/53.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +325,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Graph_BFS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Hackerrank_Autocomplete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,7 +337,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph_BFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hackerrank_Autocomplete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +346,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tech_Graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Hackerrank_StockAuction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,7 +358,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tech_Graph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hackerrank_StockAuction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +367,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SCratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,7 +379,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SCratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +390,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.394" />
-        <item itemvalue="Python.921" />
-        <item itemvalue="Python.Tech_Graph" />
-        <item itemvalue="Python.Graph_BFS" />
-        <item itemvalue="Python.Tree" />
+        <item itemvalue="Python.SCratch" />
+        <item itemvalue="Python.53" />
+        <item itemvalue="Python.376" />
+        <item itemvalue="Python.Hackerrank_Autocomplete" />
+        <item itemvalue="Python.Hackerrank_StockAuction" />
       </list>
     </recent_temporary>
   </component>
@@ -314,11 +517,6 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/15.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/18.py</url>
           <line>14</line>
           <option name="timeStamp" value="14" />
@@ -374,11 +572,6 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Tree.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/102.py</url>
           <line>24</line>
           <option name="timeStamp" value="60" />
@@ -387,16 +580,6 @@
           <url>file://$PROJECT_DIR$/102.py</url>
           <line>17</line>
           <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Tech_Trees2.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Tech_Trees2.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Tech_Greedy.py</url>
@@ -443,6 +626,11 @@
           <line>16</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/56.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -452,14 +640,9 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="s[i]" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/1978755681/builtins.py">
+    <entry file="file://$PROJECT_DIR$/../../../../../Caches/PyCharmCE2018.2/python_stubs/1978755681/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="4163" column="8" selection-start-line="4163" selection-start-column="8" selection-end-line="4163" selection-end-column="8" />

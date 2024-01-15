@@ -1,6 +1,6 @@
 # Python3 Program to print BFS traversal
-# from a given source vertex. BFS(int s)
-# traverses vertices reachable from s.
+# from a given source vertex. BFS(int Cookie)
+# traverses vertices reachable from Cookie.
 from collections import defaultdict
 
 # This class represents a directed graph
@@ -39,7 +39,7 @@ class Graph:
 			print (s, end = " ")
 
 			# Get all adjacent vertices of the
-			# dequeued vertex s. If a adjacent
+			# dequeued vertex Cookie. If a adjacent
 			# has not been visited, then mark it
 			# visited and enqueue it
 			for i in self.graph[s]:

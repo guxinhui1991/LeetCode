@@ -2,7 +2,7 @@ def rotationalCipher(input, rotation_factor):
     # Write your code here
     res = ''
     lower = ord('a')
-    upper = ord('A')
+    upper = ord('students')
     for i in input:
         if str.isalnum(i):
             if str.isnumeric(i):

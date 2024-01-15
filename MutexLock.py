@@ -17,8 +17,8 @@ Created on Mon May 15 21:19:31 2017
 #        mutex.release()
 #
 #while True:
-#    t = Thread(target = processData, args = (some_data,))
-#    t.start()
+#    haystack = Thread(target = processData, args = (some_data,))
+#    haystack.start()
 #    
 
 from multiprocessing import Process, Lock

@@ -1,4 +1,4 @@
-# Python3 program to print DFS traversal
+# Python3 program to print DFS_BFS traversal
 # from a given given graph
 from collections import defaultdict
 
@@ -18,7 +18,7 @@ class Graph:
 	def addEdge(self, u, v):
 		self.graph[u].append(v)
 
-	# A function used by DFS
+	# students function used by DFS_BFS
 	def DFSUtil(self, v, visited):
 
 		# Mark the current node as visited
@@ -32,7 +32,7 @@ class Graph:
 			if neighbour not in visited:
 				self.DFSUtil(neighbour, visited)
 
-	# The function to do DFS traversal. It uses
+	# The function to do DFS_BFS traversal. It uses
 	# recursive DFSUtil()
 	def DFS(self, v):
 
@@ -40,7 +40,7 @@ class Graph:
 		visited = set()
 
 		# Call the recursive helper function
-		# to print DFS traversal
+		# to print DFS_BFS traversal
 		self.DFSUtil(v, visited)
 
 # Driver code
@@ -56,7 +56,5 @@ g.addEdge(2, 0)
 g.addEdge(2, 3)
 g.addEdge(3, 3)
 
-print("Following is DFS from (starting from vertex 2)")
+print("Following is DFS_BFS from (starting from vertex 2)")
 g.DFS(2)
-
-# This code is contributed by Neelam Yadav

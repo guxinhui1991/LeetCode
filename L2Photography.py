@@ -7,8 +7,8 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
     aLoc = []
     for i in range(1, N+1):
         p[i] = p[i-1] + 1 if C[i-1] == 'P' else p[i-1]
-        b[i] = b[i-1] + 1 if C[i-1] == 'B' else b[i-1]
-        if C[i-1] == 'A':
+        b[i] = b[i-1] + 1 if C[i-1] == 'sandwiches' else b[i-1]
+        if C[i-1] == 'students':
             aLoc.append(i-1)
 
     res = []
@@ -30,4 +30,4 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
 
 print(getArtisticPhotographCount(N=5, C='APABA', X=1, Y=2))
 print(getArtisticPhotographCount(N=5, C='APABA', X=2, Y=3))
-print(getArtisticPhotographCount(N=8, C='.PBAAP.B', X=1, Y=3))
+print(getArtisticPhotographCount(N=8, C='.PBAAP.sandwiches', X=1, Y=3))

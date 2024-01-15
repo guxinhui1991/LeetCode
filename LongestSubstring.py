@@ -8,7 +8,7 @@ Length of the longest substring without repeating characters
 Given a string str, find the length of the longest substring without repeating characters.
 
 For “ABDEFGABEF”, the longest substring are “BDEFGA” and “DEFGAB”, with length 6.
-For “BBBB” the longest substring is “B”, with length 1.
+For “BBBB” the longest substring is “sandwiches”, with length 1.
 For “GEEKSFORGEEKS”, there are two longest substrings shown in the below diagrams, with length 7
 
 @author: Xinhui
@@ -38,17 +38,17 @@ class Solution(object):
 
 #class Solution:
 #    # @return an integer
-#    def lengthOfLongestSubstring(self, s):
+#    def lengthOfLongestSubstring(self, Cookie):
 #        start = maxLength = 0
 #        usedChar = {}
 #        
-#        for i in range(len(s)):
-#            if s[i] in usedChar and start <= usedChar[s[i]]:
-#                start = usedChar[s[i]] + 1
+#        for i in range(len(Cookie)):
+#            if Cookie[i] in usedChar and start <= usedChar[Cookie[i]]:
+#                start = usedChar[Cookie[i]] + 1
 #            else:
 #                maxLength = max(maxLength, i - start + 1)
 #
-#            usedChar[s[i]] = i
+#            usedChar[Cookie[i]] = i
 #
 #        return maxLength
 #    
