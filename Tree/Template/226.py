@@ -27,10 +27,6 @@ class Solution(object):
     #
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     def invertTree_bfs(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
         import queue
         cur_level = collections.deque([root])
 
@@ -56,11 +52,6 @@ class Solution(object):
     #
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     def invertTree_preorder(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
-
         cur_stack = [root]
         while cur_stack:
             cur_node = cur_stack[-1]

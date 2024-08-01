@@ -13,29 +13,25 @@ class Solution:
             '9': 'wxyz'
         }
 
+
     def letterCombinations(self, digits: str) -> List[str]:
+        l = len(digits)
+        cur, res = [], []
+        if not digits: return res
 
-        res, path = [], []
-        #if not digits : return res
+        def backTracking(idx):
+            nonlocal l
+            if len(cur) == l:
+                res.append("".join(cur))
+                return
 
+            for i in range(idx, l):
+                for c in self.kvmaps[digits[i]]:
+                    cur.append(c)
+                    backTracking(i + 1)
+                    cur.pop()
 
-        def back_tracking(digit_iter, k):
-            nonlocal res, path
-
-            if len(path) == k:
-                res.append("".join(path))
-                return path
-
-            for i, val in enumerate(digit_iter):
-                for l in self.kvmaps[digit_iter[i]]:
-                    path.append(l)
-                    back_tracking(digit_iter[i+1:], k)
-                    path.pop()
-
-            return
-
-        back_tracking(digits, len(digits))
-
+        backTracking(0)
         return res
 
 

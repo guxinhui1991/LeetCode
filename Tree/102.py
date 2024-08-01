@@ -25,17 +25,16 @@ class Solution(object):
 
     def levelOrder2(self, root):
         res_arr = []
-        self.helper(root, 0, res_arr)
-        return res_arr
 
-    def helper(self, root, level, res):
-        if not root: return
+        def dfs(node, level, res):
+            if not node: return
+            if len(res) == level: res.append([])
+            res[level].append(node.val)
+            dfs(node.left, level + 1, res)
+            dfs(node.right, level + 1, res)
+            return res
 
-        if len(res) == level:
-            res.append([])
-        res[level].append(root.val)
-        self.helper(root.left, level+1, res)
-        self.helper(root.right, level+1, res)
+        return dfs(root, 0, res_arr)
 
 
 root = TreeNode(3)

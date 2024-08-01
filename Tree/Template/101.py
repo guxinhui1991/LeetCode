@@ -35,11 +35,6 @@ class Solution:
 ####################################
 class Solution1(object):
     def isSymmetric(self, root):
-        """
-        :type root: Node
-        :rtype: Node
-        """
-
         def testSymmetric(root):
             if not root: return True
 

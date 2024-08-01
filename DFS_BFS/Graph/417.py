@@ -31,8 +31,6 @@ class Solution_DFS:
         for x,y in start_A: DFS(x, y, res_A)
         return res_P & res_A
 
-
-
 # BFS Solution
 class Solution_BFS:
     def pacificAtlantic(self, h: List[List[int]]) -> List[List[int]]:
@@ -67,3 +65,6 @@ class Solution_BFS:
         res_A = BFS(start_A)
 
         return res_P & res_A
+
+
+Solution_DFS().pacificAtlantic([[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]])

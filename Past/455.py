@@ -1,10 +1,5 @@
 class Solution(object):
     def findContentChildren(self, g, s):
-        """
-        :type g: List[int]
-        :type s: List[int]
-        :rtype: int
-        """
         res = 0
         s = sorted(s)
         for child in g:

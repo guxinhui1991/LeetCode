@@ -7,10 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def inorderTraversal_recursion(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
         if not root: return []
         if root.left:
             return self.inorderTraversal(root.left) + [root.val] +self.inorderTraversal(root.right)
@@ -38,22 +34,26 @@ class Solution(object):
         return res
 
 
-    def inorderTraversal(self, root):
+
+    def inorderTraversal_loop_uniform(self, root):
         res = []
-        cur_stack = []
+        if not root: return res
 
-        if not root: return root
-
-        cur_stack.append(root)
+        cur_stack = [root]
         while cur_stack:
-            cur_node = cur_stack[-1]
-
-            if cur_node:
+            cur = cur_stack[-1]
+            if cur:
                 cur_stack.pop()
-                if cur_node.right: cur_stack.append(cur_node.right)
+                if cur.right: cur_stack.append(cur.right)
+                cur_stack.append(cur)
+                cur_stack.append(None)
+                if cur.left: cur_stack.append(cur.left)
+            else:
+                cur_stack.pop()
+                cur = cur_stack.pop()
+                res.append(cur.val)
 
-
-
+        return res
 
 
 r1 = TreeNode(val=3, left = TreeNode(6), right = TreeNode(7))

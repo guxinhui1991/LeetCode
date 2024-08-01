@@ -3,10 +3,6 @@ from typing import List
 
 class Solution(object):
     def wiggleMaxLength(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
         N = len(nums)
 
         res = 1
